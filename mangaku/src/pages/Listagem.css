@@ -1,0 +1,32 @@
+/* Listagem.css */
+
+.banner {
+    background-color: #3498db; /* Cor de fundo do banner */
+    color: #fff; /* Cor do texto no banner */
+    padding: 20px; /* Espaçamento interno no banner */
+    margin-top: 20px; /* Espaçamento superior do banner em relação à Navbar */
+    position: relative; /* Permite posicionar filhos relativos a este elemento */
+    z-index: 1; /* Ajusta a ordem de empilhamento para sobrepor outros elementos */
+}
+
+table {
+    width: 90%;
+    margin-left: 60px;
+    border-collapse: collapse;
+    margin-top: 10px; /* Espaçamento superior da tabela em relação ao banner */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda da célula da tabela */
+    padding: 8px; /* Espaçamento interno da célula */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+th {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho da tabela */
+    color: white; /* Cor do texto no cabeçalho da tabela */
+}
+h2{
+    font-size: 2em;
+    margin-left: 30%;
+}

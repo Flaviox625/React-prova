@@ -1,0 +1,55 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.bgContainer {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Adicionado para posicionamento relativo */
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border: none;
+}
+
+/* Estilos adicionais para tornar o vídeo responsivo em tamanhos menores */
+@media (max-width: 767px) {
+    .bgContainer {
+        height: 100vh;
+    }
+
+    video {
+        height: 100vh;
+    }
+}
+
+/* Estilo para aviso em caso de falha no carregamento do vídeo */
+video::after {
+    content: "Seu navegador não suporta a tag de vídeo.";
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para sobreposição semi-transparente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: 1;
+}
