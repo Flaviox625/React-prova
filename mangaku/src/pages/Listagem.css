@@ -1,19 +1,27 @@
 /* Listagem.css */
 
 .banner {
-    background-color: #3498db; /* Cor de fundo do banner */
-    color: #fff; /* Cor do texto no banner */
-    padding: 20px; /* Espaçamento interno no banner */
-    margin-top: 20px; /* Espaçamento superior do banner em relação à Navbar */
-    position: relative; /* Permite posicionar filhos relativos a este elemento */
-    z-index: 1; /* Ajusta a ordem de empilhamento para sobrepor outros elementos */
+    background-color: rgba(5, 5, 17, 0.402);
+    color: #fff;
+    padding: 5px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 10px; /* Adiciona bordas arredondadas com um raio de 10px */
 }
 
+
+
 table {
-    width: 90%;
-    margin-left: 60px;
+    width: 100%;
+    border-radius: 2px;
+    justify-content: center;
     border-collapse: collapse;
-    margin-top: 10px; /* Espaçamento superior da tabela em relação ao banner */
+    margin-top: 10px ; /* Espaçamento superior da tabela em relação ao banner */
 }
 
 th, td {
@@ -23,10 +31,12 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50; /* Cor de fundo do cabeçalho da tabela */
+    justify-content: center;
+    background-color:rgba(50, 5, 62, 0.679);/* Cor de fundo do cabeçalho da tabela */
     color: white; /* Cor do texto no cabeçalho da tabela */
 }
 h2{
     font-size: 2em;
-    margin-left: 30%;
+    color: white;
+    text-align: center;
 }
